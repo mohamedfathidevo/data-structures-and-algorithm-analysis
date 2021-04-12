@@ -56,7 +56,7 @@ template <typename T>
 T queue_array<T>::peek()
 {
     if (isEmpty())
-        return NULL;
+        exit(EXIT_FAILURE);
     return arr[front];
 }
 

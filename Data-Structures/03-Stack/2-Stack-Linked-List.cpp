@@ -68,7 +68,7 @@ template <typename T>
 T stack_linked_list<T>::top()
 {
     if (head == NULL)
-        return INT_MAX;
+        exit(EXIT_FAILURE);
     else
         return head->data;
 }
